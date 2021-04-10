@@ -31,10 +31,10 @@ public class Day1Test {
 	System.out.println(driver.findElement(By.xpath("//span[@class='rts-counter' and @rel='current_population']")).getText());
 	
 	while(count<5){
-	System.out.println(driver.findElement(By.xpath("//span[@class='rts-counter' and @rel='current_population']")).getText());
+		System.out.println(driver.findElement(By.xpath("//span[@class='rts-counter' and @rel='current_population']")).getText());
 	System.out.println(driver.findElement(By.xpath("//span[@class='rts-counter' and @rel='births_today']")).getText());
 	System.out.println(driver.findElement(By.xpath("//span[@class='rts-counter' and @rel='absolute_growth']")).getText());
-	System.out.println("*****************************************************************");
+	System.out.println("*******************************************");
 	Thread.sleep(1000);
 	count++;
 				}
