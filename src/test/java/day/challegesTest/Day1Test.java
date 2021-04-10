@@ -19,10 +19,11 @@ public class Day1Test {
 	
 	@Test
 	public void day1Test() throws Throwable{
+		WebDriver driver=new FirefoxDriver();
 		String browser = System.getProperty("browser");
 		if(browser.equals("firefox")){
 		
-	WebDriver driver=new FirefoxDriver();
+	
 	driver.get("https://www.worldometers.info/world-population/");
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	int count=1;
@@ -40,6 +41,7 @@ public class Day1Test {
 			}
 		else{
 			System.out.println("No browser is selected");
-		}	
-	}
+		}
+		driver.close();
+		}
 	}
